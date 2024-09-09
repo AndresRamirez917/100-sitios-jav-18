@@ -8,7 +8,7 @@ async function getData(){
     products.forEach(element => {
         const randomInt = randomImage(1, arr.length);
         const ranIndex = randomInt;
-        for(i = 0; i <= 3; i++){
+        for(i = 0; i <= 6; i++){
             if(element.id == i){
 
                 const card = document.createRange().createContextualFragment(`
@@ -33,7 +33,46 @@ async function getData(){
 
 const btn_validar = document.getElementById('btn-validar')
 
-//btn_validar.addEventListener("click", alert("madre"))
+const validar = (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre');
+    const email = document.getElementById('email');
+    const mensaje = document.getElementById('mensaje');
+    const arr = [];
+    const arrMessages = ["Nombre", "Email", "Mensaje"];
+    arr.push(nombre, email, mensaje);
+    for(i = 0; i < arr.length; i++){
+        if(arr[i].value == ""){
+            swal({
+                title: `El campo ${arrMessages[i]} no puede estar vacío`,
+                icon: "error",
+                 })
+                 return false;
+        }
+    }
+    if(!emaiValido(email.value)){
+        swal({
+            title: `El campo ${arrMessages[1]} no tiene el formato correcto`,
+            icon: "error",
+             })
+             return false;
+    }
+    swal({
+        title: `Los datos fueron enviados satisfactoriamente`,
+        icon: "success",
+         })
+    nombre.value = "";
+    email.value = "";
+    mensaje.value = "";
+    return true;
+
+}
+
+const emaiValido = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+
+btn_validar.addEventListener("click", validar)
 getData()
 
 
