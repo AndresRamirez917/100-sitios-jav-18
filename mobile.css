@@ -1,0 +1,74 @@
+.navbar .logo {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar ul {
+    float: none;
+    display: flex;
+}
+
+.navbar ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#showcase img{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#showcase h1 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#showcase p {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#about h2 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#about .about-text {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#trips .card {
+    float: none;
+    width: 100%;
+}
+
+#contact h2 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact form{
+    float: none;
+    width: 100%;
+   
+}
+

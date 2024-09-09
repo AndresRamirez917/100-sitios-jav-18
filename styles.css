@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #51966A;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#fff;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+    color: #fff;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+    font-weight: 300;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#showcase img {
+    width: 100%;
+}
+
+.container {
+    max-width:1300px;
+margin: 0 auto;
+padding: 0 20px;
+overflow: auto;
+}
+
+#showcase span {
+    color: green;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+span {
+    color: green;
+}
+
+form {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+form .form-group {
+    margin-bottom: 10px;
+}
+
+form .form-control {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#contact form {
+    width: 100%;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 20px;
+    width: 100%;
+    background: #51966A;
+}
+
+button:hover {
+    background: #466d54;
+}
+
+/* navbar */
+.navbar {
+    padding: 30px;
+}
+
+.navbar .logo {
+    float: left;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar ul li {
+float: left;    
+
+}
+
+.navbar ul li a {
+    display: block;
+    margin-left: 20px;
+}
+
+/* showcase */
+#showcase {
+    padding: 0 0 50px 0;
+}
+
+#showcase img{
+float: left;
+width: 50%;
+}
+
+/* about */
+#about {
+    background: #14251a;
+    color: #fff;
+}
+
+#about h2 {
+display: block;
+    float: left;
+    width: 30%;
+    margin-top: 150px;
+}
+
+#about .about-text {
+    float: right;
+    width: 60%;
+    padding: 50px;
+}
+
+/* trips */
+
+#trips img {
+    width: 300px;
+    height: 350px;
+}
+
+.card h3{
+    margin-bottom: 30px;
+}
+
+#trips .card {
+    float: left;
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.card img{
+    border-radius: 10px;
+}
+
+.card:hover img {-webkit-transform:scale(1.0);transform:scale(1.1);transition: all ease-out 0.5s;}
+.card {overflow:hidden;}
+
+/* contact */
+#contact {
+    background: #14251a;
+    padding: 50px 0;
+    color: #fff;
+}
+
+#contact form {
+    float: left;
+    width: 50%;
+}
+
+#contact h2 {
+    float: right;
+    width: 50%;
+    margin-top: 100px;
+}
+
+#footer {
+    padding: 50px;
+    text-align: center;
+}
+
+
